@@ -1,8 +1,12 @@
-CA CHEF A DOMICILIO - VERSIONE DEMO iPHONE
+CA CHEF A DOMICILIO – Web App v4
+Contenuti aggiornati sulla base dei materiali forniti:
+- Brochure: servizi, esperienze, partnership e contatti
+- Menu Gourmet: menu tipo, piatti, prezzi a partire da €30/€45/€60 e inclusioni
+- Accordo di collaborazione: riferimento alla collaborazione con Property Management e commissione del 20%
 
-1. Estrai lo ZIP.
-2. Apri index.html per vedere l'app.
-3. Per usarla come vera Web App su iPhone serve pubblicarla online (es. un hosting).
-4. Nel file index.html sostituisci 390000000000 con il tuo numero WhatsApp in formato internazionale senza +.
-
-Questa è la prima versione: grafica mobile, menu, esperienze, preventivo e richiesta WhatsApp.
+Per pubblicare modifiche effettuate nella Gestione Chef:
+1. Apri Gestione Chef.
+2. Modifica i dati.
+3. Premi “Scarica config.json aggiornato”.
+4. Su GitHub sostituisci il vecchio config.json con quello scaricato.
+5. Commit changes.

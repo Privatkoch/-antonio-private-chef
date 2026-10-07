@@ -1,0 +1,138 @@
+{
+  "phone": "3757410638",
+  "brand": "CA CHEF A DOMICILIO",
+  "subtitle": "Esperienze Gastronomiche Esclusive direttamente nella vostra villa",
+  "tagline": "Cucina con passione, ovunque tu sia.",
+  "heroTitle": "Lo chef arriva direttamente nella tua villa.",
+  "heroText": "Private Dining, Cooking Show ed esperienze gastronomiche su misura per ville private, appartamenti di pregio e strutture ricettive.",
+  "services": [
+    [
+      "Private Dining",
+      "Cene e pranzi privati serviti con la massima cura del dettaglio."
+    ],
+    [
+      "Live Show Cooking",
+      "Intrattenimento culinario interattivo e racconto dei piatti."
+    ],
+    [
+      "Romantic Dinners",
+      "Esperienze intime e personalizzate per occasioni speciali di coppia."
+    ],
+    [
+      "Local Markets",
+      "Spesa guidata con lo chef nei mercati locali alla scoperta delle materie prime."
+    ],
+    [
+      "Gourmet Aperitifs",
+      "Finger food ricercati e abbinamenti per un pre-cena di classe."
+    ],
+    [
+      "Local Tastings",
+      "Degustazioni guidate di prodotti tipici e vini del territorio."
+    ]
+  ],
+  "experiences": [
+    [
+      "ESSENTIAL",
+      30,
+      "Un'esperienza semplice e autentica per gustare la cucina italiana direttamente nella propria casa vacanza.",
+      [
+        "Preparazione nella proprietà",
+        "Selezione di piatti italiani",
+        "Servizio dello chef",
+        "Menu base concordato"
+      ]
+    ],
+    [
+      "SIGNATURE",
+      45,
+      "Un'esperienza gastronomica completa, ideale per una cena speciale con famiglia o amici.",
+      [
+        "Menu personalizzato di 4 portate",
+        "Preparazione espressa sul posto",
+        "Presentazione curata dallo chef"
+      ]
+    ],
+    [
+      "PRIVATE COOKING SHOW",
+      60,
+      "La nostra esperienza più coinvolgente: non solo una cena, ma un vero show interattivo.",
+      [
+        "Menu premium personalizzato",
+        "Preparazione live davanti agli ospiti",
+        "Racconto di storia, tecniche e segreti"
+      ]
+    ]
+  ],
+  "menu": [
+    [
+      "ANTIPASTO",
+      "Millefoglie di melanzane dorate con stracciatella di bufala pugliese, riduzione al basilico fresco e cialda croccante di Parmigiano."
+    ],
+    [
+      "PRIMO",
+      "Spaghettone di Gragnano trafilato al bronzo su crema di datterino giallo, emulsione al pesto leggero e croccante di tarallo."
+    ],
+    [
+      "DESSERT",
+      "Tiramisù espresso con crema artigianale al mascarpone e fava tonka grattugiata."
+    ],
+    [
+      "SIGNATURE · ANTIPASTO",
+      "Battuta di fassona piemontese al coltello, maionese al tartufo nero estivo, nocciole Tonde Gentili ed erba cipollina."
+    ],
+    [
+      "SIGNATURE · PRIMO",
+      "Risotto Acquerello mantecato alla crema di zucca arrosto, fonduta leggera di Taleggio DOP e polvere di amaretto."
+    ],
+    [
+      "SIGNATURE · SECONDO",
+      "Filetto di maialino CBT in crosta di erbe fini, demi-glace al vino Passito e purè soffice alle castagne."
+    ],
+    [
+      "SIGNATURE · DESSERT",
+      "Sfera di cioccolato fondente belga con cuore morbido di lamponi freschi su terra di cacao salato."
+    ],
+    [
+      "COOKING SHOW · AMUSE-BOUCHE",
+      "Capasanta scottata su vellutata di topinambur e polvere di guanciale croccante di Cinta Senese. Preparazione live."
+    ],
+    [
+      "COOKING SHOW · ANTIPASTO",
+      "Gambero rosso di Mazara del Vallo al lime, spuma tiepida di patate affumicate e cialda corallo al nero di seppia."
+    ],
+    [
+      "COOKING SHOW · PRIMO",
+      "Bottone di pasta fresca all'uovo ripieno di ossobuco liquido, zeste di limone candito e la sua riduzione ristretta. Cooking show live."
+    ],
+    [
+      "COOKING SHOW · DESSERT",
+      "Scomposizione di Millefoglie con crema diplomatica alla vaniglia Bourbon e frutti di bosco spadellati al Grand Marnier."
+    ]
+  ],
+  "menuNote": "Menu tipo pensati come base d'ispirazione: ogni percorso viene cucito su misura in base a gusti ed esigenze alimentari. Su richiesta, è possibile integrare vini e bevande ricercate.",
+  "included": [
+    "Spesa delle materie prime eccellenti",
+    "Servizio al tavolo ed eleganza",
+    "Racconto delle storie dei piatti",
+    "Pulizia finale impeccabile della cucina"
+  ],
+  "customMenu": "Tradizionali • Moderni • Regionali • Gourmet • Vegetariani. Gestione completa di intolleranze, allergie o regimi alimentari specifici concordati preventivamente.",
+  "partnership": {
+    "title": "Partnership con Property Management",
+    "headline": "Un servizio premium a costo zero con il 20% di commissione",
+    "text": "Per agenzie, gestori di strutture ricettive e Property Manager: per ogni esperienza prenotata dai vostri ospiti è prevista una commissione del 20%.",
+    "benefitsPartner": [
+      "Nessun investimento iniziale o costo fisso",
+      "Zero gestione burocratica, di cucina o di personale",
+      "Un servizio di lusso in più per elevare il valore del vostro brand",
+      "Guadagno diretto del 20% su ogni singola prenotazione"
+    ],
+    "benefitsGuest": [
+      "Il lusso di un ristorante d'alto livello direttamente in villa",
+      "Menu totalmente personalizzato ed esclusivo",
+      "Massimo comfort e privacy, nessun bisogno di spostarsi",
+      "Un ricordo indimenticabile della vacanza in Italia"
+    ]
+  }
+}

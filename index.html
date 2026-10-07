@@ -1,98 +1,79 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#111111">
-<title>CA Chef a Domicilio</title>
-<link rel="manifest" href="manifest.json">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111"><meta name="description" content="CA Chef a Domicilio - Private Dining, Show Cooking e Gourmet Experiences">
+<link rel="manifest" href="manifest.json"><title>CA Chef a Domicilio | Antonio Private Chef</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f7f5f1;color:#171717}
-header{background:#111;color:#fff;padding:34px 22px 28px;border-radius:0 0 28px 28px}header small{letter-spacing:2px;text-transform:uppercase;opacity:.7}h1{font-family:Georgia,serif;font-size:34px;margin:8px 0}header p{margin:0;opacity:.8}
-main{padding:18px;max-width:700px;margin:auto}.card{background:#fff;border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 5px 22px #0000000d}
-h2{font-family:Georgia,serif;margin-top:0}.hero{background:linear-gradient(135deg,#242424,#555);color:white;padding:28px;border-radius:22px}
-button{border:0;border-radius:14px;padding:14px 18px;background:#111;color:#fff;font-weight:700;font-size:16px;width:100%;margin-top:10px}
-.secondary{background:#e9e5dd;color:#111}.dish{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:13px 0}.dish:last-child{border:0}
-.price{font-weight:800;white-space:nowrap}label{display:block;font-weight:650;margin:12px 0 6px}input,select{width:100%;padding:13px;border:1px solid #ddd;border-radius:12px;font-size:16px;background:#fff}
-.total{font-size:25px;font-weight:800;margin-top:14px}.muted{color:#777;font-size:14px}.pill{display:inline-block;padding:7px 10px;border-radius:99px;background:#eee8dd;margin:4px 4px 0 0;font-size:13px}
-nav{position:sticky;bottom:0;background:#fffffff2;border-top:1px solid #ddd;padding:10px 12px;display:flex;justify-content:space-around;backdrop-filter:blur(12px)}nav a{color:#111;text-decoration:none;font-size:12px;text-align:center}
-section{scroll-margin-top:12px}
-</style>
-</head>
+:root{--ink:#171717;--gold:#b99a5b;--cream:#f7f3eb;--paper:#fff;--line:#e9e2d5}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink)}
+header{background:#111;color:#fff;padding:18px 18px 26px;border-radius:0 0 30px 30px}.logo{width:100%;max-height:250px;object-fit:contain;border-radius:18px;background:#000;display:block;margin-bottom:16px}
+header h1{font-family:Georgia,serif;text-align:center;font-size:28px;margin:8px 0 4px}.sub{text-align:center;color:#d7c29a;font-style:italic;margin:0}.tag{text-align:center;opacity:.8;margin:8px 0 0;font-size:13px}
+main{padding:16px;max-width:780px;margin:auto}.hero{background:linear-gradient(135deg,#191919,#3a352c);color:#fff;padding:28px;border-radius:24px;box-shadow:0 8px 28px #0002}.hero h2{font-size:28px;margin:0 0 10px;font-family:Georgia,serif}.hero p{line-height:1.6}.btn{border:0;border-radius:14px;padding:14px 18px;background:var(--gold);color:#111;font-weight:800;font-size:16px;width:100%;margin-top:10px}
+.card{background:var(--paper);border-radius:22px;padding:20px;margin:14px 0;box-shadow:0 5px 22px #0000000c}.sectionTitle{font-family:Georgia,serif;margin:0 0 14px;font-size:25px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.service{padding:15px;border:1px solid var(--line);border-radius:16px;background:#fff}.service b{display:block;margin-bottom:5px}.service p{font-size:13px;color:#666;margin:0;line-height:1.45}
+.exp{border:1px solid var(--line);border-radius:18px;padding:18px;margin:12px 0}.expTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.exp h3{margin:0;font-family:Georgia,serif}.price{font-weight:900;font-size:21px;color:#8f7139;white-space:nowrap}.exp p{color:#666;line-height:1.5}.exp ul{margin:8px 0 0;padding-left:20px;color:#444}.menuItem{padding:13px 0;border-bottom:1px solid var(--line)}.menuItem:last-child{border:0}.menuItem b{display:block;font-size:13px;color:#8f7139;margin-bottom:4px}.menuItem span{line-height:1.45}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gallery img{width:100%;height:190px;object-fit:cover;border-radius:16px}.pill{display:inline-block;padding:7px 10px;border-radius:99px;background:#eee8dd;margin:4px 4px 0 0;font-size:13px}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:14px}.benefitBox{border:1px solid var(--line);border-radius:16px;padding:15px}.benefitBox h4{margin:0 0 10px}.benefitBox ul{padding-left:18px;margin:0;line-height:1.6}
+label{display:block;font-weight:700;margin:12px 0 6px}input,select{width:100%;padding:13px;border:1px solid #ddd;border-radius:12px;font-size:16px;background:#fff}.total{font-size:25px;font-weight:900;margin-top:14px}.muted{color:#777;font-size:14px;line-height:1.5}
+.contact{text-align:center;font-size:20px;font-weight:900}.wa{background:#111;color:#fff}.manage{background:#fff;border:1px solid #ccc;color:#111}.quoteNote{font-size:12px;color:#777}
+nav{position:sticky;bottom:0;background:#fffffff2;border-top:1px solid #ddd;padding:10px 8px;display:flex;justify-content:space-around;backdrop-filter:blur(12px);z-index:5}nav a{color:#111;text-decoration:none;font-size:11px;text-align:center}
+@media(max-width:560px){.grid,.benefits{grid-template-columns:1fr}.gallery img{height:170px}}
+</style></head>
 <body>
 <header>
-<small>CA Chef a Domicilio</small>
-<h1>La cucina gourmet, direttamente a casa tua.</h1>
-<p>Lago di Garda · Esperienze private · Menu personalizzati</p>
+<img class="logo" src="logo.png" alt="CA Chef a Domicilio">
+<h1 id="brand">CA CHEF A DOMICILIO</h1><p class="sub" id="subtitle"></p><p class="tag" id="tagline"></p>
 </header>
 <main>
-<section id="home" class="hero">
-<h2>Un'esperienza da ristorante, a casa.</h2>
-<p>Cene romantiche, occasioni speciali, show cooking e menu degustazione preparati dal tuo chef.</p>
-<button onclick="document.getElementById('prenota').scrollIntoView({behavior:'smooth'})">Richiedi un preventivo</button>
-</section>
+<section id="home" class="hero"><h2 id="heroTitle"></h2><p id="heroText"></p><button class="btn" onclick="document.getElementById('prenota').scrollIntoView({behavior:'smooth'})">Richiedi un preventivo</button></section>
 
-<section id="menu" class="card">
-<h2>Menu Gourmet</h2>
-<div class="dish"><span>Benvenuto dello Chef</span><span class="price">incluso</span></div>
-<div class="dish"><span>Antipasto gourmet</span><span class="price">€12</span></div>
-<div class="dish"><span>Primo della tradizione contemporanea</span><span class="price">€14</span></div>
-<div class="dish"><span>Secondo di pesce o carne</span><span class="price">€20</span></div>
-<div class="dish"><span>Pre-dessert & dessert</span><span class="price">€10</span></div>
-<p class="muted">I menu possono essere personalizzati in base a stagione, esigenze e budget.</p>
-</section>
+<section id="servizi" class="card"><h2 class="sectionTitle">I nostri servizi esclusivi</h2><div id="services" class="grid"></div></section>
 
-<section class="card">
-<h2>Le esperienze</h2>
-<span class="pill">Cena romantica</span><span class="pill">Show cooking</span><span class="pill">Aperitivo gourmet</span><span class="pill">Degustazione</span><span class="pill">Eventi privati</span>
-</section>
+<section id="esperienze" class="card"><h2 class="sectionTitle">Le nostre esperienze principali</h2><div id="experiences"></div></section>
 
-<section id="prenota" class="card">
-<h2>Calcola il tuo preventivo</h2>
-<label>Numero di ospiti</label>
-<input id="guests" type="number" min="1" value="4" oninput="calc()">
-<label>Esperienza</label>
-<select id="experience" onchange="calc()">
-<option value="45">Menu Gourmet · €45/persona</option>
-<option value="60">Cena Romantica · €60/persona</option>
-<option value="55">Show Cooking · €55/persona</option>
-<option value="35">Aperitivo Gourmet · €35/persona</option>
-</select>
-<label>Data desiderata</label>
-<input id="date" type="date">
-<label>Località</label>
-<input id="place" placeholder="Es. Manerba del Garda">
-<div class="total">Totale indicativo: <span id="total">€180</span></div>
-<p class="muted">Il preventivo finale può variare in base a menu, distanza e richieste speciali.</p>
-<button onclick="sendRequest()">Invia richiesta su WhatsApp</button>
-</section>
+<section id="menu" class="card"><h2 class="sectionTitle">Proposte Menu Gourmet</h2><p class="muted" id="menuNote"></p><div id="menuList"></div></section>
 
-<section class="card">
-<h2>Contatti</h2>
-<p><b>CA Chef a Domicilio</b><br>Chef privato · Lago di Garda</p>
-<p class="muted">Sostituisci il numero WhatsApp nel file con il tuo numero prima della pubblicazione.</p>
-</section>
+<section class="card"><h2 class="sectionTitle">Menu su misura</h2><p id="customMenu" class="muted"></p><div id="included"></div></section>
+
+<section id="gallery" class="card"><h2 class="sectionTitle">Le mie creazioni</h2><div class="gallery">
+<img src="piatto1.jpeg"><img src="piatto2.jpeg"><img src="piatto3.jpeg"><img src="piatto4.jpeg"><img src="piatto5.jpeg"><img src="piatto6.jpeg"><img src="piatto7.jpeg"><img src="piatto8.jpeg"><img src="piatto9.jpeg">
+</div></section>
+
+<section id="partner" class="card"><h2 class="sectionTitle" id="partnerTitle"></h2><h3 id="partnerHeadline"></h3><p id="partnerText" class="muted"></p><div class="benefits"><div class="benefitBox"><h4>Vantaggi per voi</h4><ul id="partnerBenefits"></ul></div><div class="benefitBox"><h4>Vantaggi per i vostri ospiti</h4><ul id="guestBenefits"></ul></div></div><button class="btn" onclick="partnerWhatsApp()">🤝 Richiedi proposta partnership</button></section>
+
+<section id="prenota" class="card"><h2 class="sectionTitle">Calcola il tuo preventivo</h2>
+<label>Numero di ospiti</label><input id="guests" type="number" min="1" value="4" oninput="calc()">
+<label>Esperienza</label><select id="experience" onchange="calc()"></select>
+<label>Data desiderata</label><input id="date" type="date">
+<label>Località</label><input id="place" placeholder="Es. Manerba del Garda">
+<div class="total">Totale indicativo: <span id="total">€0</span></div>
+<p class="quoteNote">Prezzi “a partire da”. Il preventivo finale viene personalizzato in base a menu, esigenze, distanza e richieste speciali.</p>
+<button class="btn wa" onclick="sendRequest()">💬 Invia richiesta su WhatsApp</button></section>
+
+<section class="card"><h2 class="sectionTitle">Contatti</h2><div class="contact" id="phoneDisplay"></div><button class="btn" onclick="callChef()">📞 Chiama lo Chef</button><button class="btn wa" onclick="whatsappChef()">💬 Scrivi su WhatsApp</button></section>
+<section class="card"><button class="btn manage" onclick="location.href='admin.html'">⚙️ Gestione Chef</button></section>
 </main>
-<nav>
-<a href="#home">⌂<br>Home</a>
-<a href="#menu">🍽️<br>Menu</a>
-<a href="#prenota">📅<br>Prenota</a>
-<a href="#home">👨‍🍳<br>Chef</a>
-</nav>
+<nav><a href="#home">⌂<br>Home</a><a href="#servizi">✨<br>Servizi</a><a href="#menu">🍽️<br>Menu</a><a href="#prenota">📅<br>Prenota</a><a href="#partner">🤝<br>Partner</a></nav>
 <script>
-function calc(){
- const n=Math.max(1,Number(document.getElementById('guests').value)||1);
- const p=Number(document.getElementById('experience').value);
- document.getElementById('total').textContent='€'+(n*p).toLocaleString('it-IT');
+const fallback={};
+let cfg={};
+async function loadCfg(){try{const r=await fetch('config.json?'+Date.now());cfg=await r.json()}catch(e){cfg=fallback}try{const l=localStorage.getItem('apc_config');if(l)cfg={...cfg,...JSON.parse(l)}}catch(e){}render()}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){
+document.getElementById('brand').textContent=cfg.brand;document.getElementById('subtitle').textContent=cfg.subtitle;document.getElementById('tagline').textContent=cfg.tagline;
+document.getElementById('heroTitle').textContent=cfg.heroTitle;document.getElementById('heroText').textContent=cfg.heroText;
+document.getElementById('services').innerHTML=cfg.services.map(x=>`<div class="service"><b>${esc(x[0])}</b><p>${esc(x[1])}</p></div>`).join('');
+document.getElementById('experiences').innerHTML=cfg.experiences.map(x=>`<div class="exp"><div class="expTop"><h3>${esc(x[0])}</h3><span class="price">€${Number(x[1])}<small>/persona</small></span></div><p>${esc(x[2])}</p><ul>${x[3].map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join('');
+document.getElementById('menuNote').textContent=cfg.menuNote;document.getElementById('menuList').innerHTML=cfg.menu.map(x=>`<div class="menuItem"><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('');
+document.getElementById('customMenu').textContent=cfg.customMenu;document.getElementById('included').innerHTML='<div>'+cfg.included.map(x=>`<span class="pill">✓ ${esc(x)}</span>`).join('')+'</div>';
+document.getElementById('partnerTitle').textContent=cfg.partnership.title;document.getElementById('partnerHeadline').textContent=cfg.partnership.headline;document.getElementById('partnerText').textContent=cfg.partnership.text;
+document.getElementById('partnerBenefits').innerHTML=cfg.partnership.benefitsPartner.map(x=>`<li>${esc(x)}</li>`).join('');document.getElementById('guestBenefits').innerHTML=cfg.partnership.benefitsGuest.map(x=>`<li>${esc(x)}</li>`).join('');
+document.getElementById('phoneDisplay').textContent='+39 '+cfg.phone.slice(0,3)+' '+cfg.phone.slice(3,6)+' '+cfg.phone.slice(6);
+const e=document.getElementById('experience');e.innerHTML=cfg.experiences.map(x=>`<option value="${Number(x[1])}">${esc(x[0])} · €${Number(x[1])}/persona</option>`).join('');calc()
 }
-function sendRequest(){
- const n=document.getElementById('guests').value, e=document.getElementById('experience');
- const date=document.getElementById('date').value||'da definire', place=document.getElementById('place').value||'da definire';
- const msg=`Ciao Antonio, vorrei un preventivo CA Chef a Domicilio.%0A%0AOspiti: ${n}%0AEsperienza: ${encodeURIComponent(e.options[e.selectedIndex].text)}%0AData: ${date}%0ALocalità: ${encodeURIComponent(place)}`;
- const phone='390000000000';
- window.location.href=`https://wa.me/${phone}?text=${msg}`;
-}
-calc();
-</script>
-</body>
-</html>
+function wa(){return '39'+String(cfg.phone).replace(/\D/g,'')}
+function calc(){const n=Math.max(1,Number(document.getElementById('guests').value)||1),p=Number(document.getElementById('experience').value)||0;document.getElementById('total').textContent='€'+(n*p).toLocaleString('it-IT')}
+function sendRequest(){const n=document.getElementById('guests').value,e=document.getElementById('experience'),date=document.getElementById('date').value||'da definire',place=document.getElementById('place').value||'da definire';const msg=`Ciao Antonio, vorrei un preventivo CA Chef a Domicilio.\n\nOspiti: ${n}\nEsperienza: ${e.options[e.selectedIndex].text}\nData: ${date}\nLocalità: ${place}`;location.href=`https://wa.me/${wa()}?text=${encodeURIComponent(msg)}`}
+function partnerWhatsApp(){location.href=`https://wa.me/${wa()}?text=${encodeURIComponent('Buongiorno, sono interessato/a a una partnership con CA Chef a Domicilio per la mia struttura. Vorrei ricevere informazioni sulla collaborazione con commissione del 20%.')}`}
+function callChef(){location.href='tel:+'+wa()}function whatsappChef(){location.href='https://wa.me/'+wa()}loadCfg();
+</script></body></html>

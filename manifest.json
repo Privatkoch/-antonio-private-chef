@@ -1,9 +1,9 @@
 {
-"name":"CA Chef a Domicilio",
-"short_name":"CA Chef",
+"name":"Antonio Private Chef",
+"short_name":"Antonio Chef",
 "start_url":"./index.html",
 "display":"standalone",
 "background_color":"#f7f5f1",
 "theme_color":"#111111",
-"icons":[]
+"icons":[{"src":"logo.png","sizes":"512x512","type":"image/png"}]
 }
