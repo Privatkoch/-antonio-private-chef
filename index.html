@@ -4,49 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111111">
-<title>Antonio Private Chef</title>
+<title>CA Chef a Domicilio</title>
 <link rel="manifest" href="manifest.json">
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f7f5f1;color:#171717}
-header{background:#111;color:#fff;padding:18px 18px 26px;border-radius:0 0 28px 28px}
-.logo{width:100%;max-height:260px;object-fit:contain;border-radius:18px;background:#000;display:block;margin-bottom:18px}
-header p{margin:0;opacity:.82;text-align:center;font-size:14px}
-main{padding:18px;max-width:720px;margin:auto}.card{background:#fff;border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 5px 22px #0000000d}
+header{background:#111;color:#fff;padding:34px 22px 28px;border-radius:0 0 28px 28px}header small{letter-spacing:2px;text-transform:uppercase;opacity:.7}h1{font-family:Georgia,serif;font-size:34px;margin:8px 0}header p{margin:0;opacity:.8}
+main{padding:18px;max-width:700px;margin:auto}.card{background:#fff;border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 5px 22px #0000000d}
 h2{font-family:Georgia,serif;margin-top:0}.hero{background:linear-gradient(135deg,#242424,#555);color:white;padding:28px;border-radius:22px}
 button{border:0;border-radius:14px;padding:14px 18px;background:#111;color:#fff;font-weight:700;font-size:16px;width:100%;margin-top:10px}
-.dish{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:13px 0}.dish:last-child{border:0}
+.secondary{background:#e9e5dd;color:#111}.dish{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:13px 0}.dish:last-child{border:0}
 .price{font-weight:800;white-space:nowrap}label{display:block;font-weight:650;margin:12px 0 6px}input,select{width:100%;padding:13px;border:1px solid #ddd;border-radius:12px;font-size:16px;background:#fff}
 .total{font-size:25px;font-weight:800;margin-top:14px}.muted{color:#777;font-size:14px}.pill{display:inline-block;padding:7px 10px;border-radius:99px;background:#eee8dd;margin:4px 4px 0 0;font-size:13px}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:16px}
-.contact{font-size:20px;font-weight:800;text-align:center}.wa{background:#111}
 nav{position:sticky;bottom:0;background:#fffffff2;border-top:1px solid #ddd;padding:10px 12px;display:flex;justify-content:space-around;backdrop-filter:blur(12px)}nav a{color:#111;text-decoration:none;font-size:12px;text-align:center}
+section{scroll-margin-top:12px}
 </style>
 </head>
 <body>
 <header>
-<img class="logo" src="logo.png" alt="Antonio Private Chef">
-<p>Private Dining · Show Cooking · Gourmet Experiences</p>
+<small>CA Chef a Domicilio</small>
+<h1>La cucina gourmet, direttamente a casa tua.</h1>
+<p>Lago di Garda · Esperienze private · Menu personalizzati</p>
 </header>
 <main>
 <section id="home" class="hero">
-<h2>La cucina gourmet, direttamente a casa tua.</h2>
-<p>Un'esperienza privata costruita intorno a te, con menu personalizzati e cucina italiana contemporanea.</p>
+<h2>Un'esperienza da ristorante, a casa.</h2>
+<p>Cene romantiche, occasioni speciali, show cooking e menu degustazione preparati dal tuo chef.</p>
 <button onclick="document.getElementById('prenota').scrollIntoView({behavior:'smooth'})">Richiedi un preventivo</button>
-</section>
-
-<section id="gallery" class="card">
-<h2>Le mie creazioni</h2>
-<div class="gallery">
-<img src="piatto1.jpeg" alt="Creazione dello chef">
-<img src="piatto2.jpeg" alt="Creazione dello chef">
-<img src="piatto3.jpeg" alt="Creazione dello chef">
-<img src="piatto4.jpeg" alt="Creazione dello chef">
-<img src="piatto5.jpeg" alt="Creazione dello chef">
-<img src="piatto6.jpeg" alt="Creazione dello chef">
-<img src="piatto7.jpeg" alt="Creazione dello chef">
-<img src="piatto8.jpeg" alt="Creazione dello chef">
-<img src="piatto9.jpeg" alt="Creazione dello chef">
-</div>
 </section>
 
 <section id="menu" class="card">
@@ -56,11 +39,11 @@ nav{position:sticky;bottom:0;background:#fffffff2;border-top:1px solid #ddd;padd
 <div class="dish"><span>Primo della tradizione contemporanea</span><span class="price">€14</span></div>
 <div class="dish"><span>Secondo di pesce o carne</span><span class="price">€20</span></div>
 <div class="dish"><span>Pre-dessert & dessert</span><span class="price">€10</span></div>
-<p class="muted">I menu sono personalizzabili in base alla stagione, alle esigenze e al budget.</p>
+<p class="muted">I menu possono essere personalizzati in base a stagione, esigenze e budget.</p>
 </section>
 
 <section class="card">
-<h2>Esperienze</h2>
+<h2>Le esperienze</h2>
 <span class="pill">Cena romantica</span><span class="pill">Show cooking</span><span class="pill">Aperitivo gourmet</span><span class="pill">Degustazione</span><span class="pill">Eventi privati</span>
 </section>
 
@@ -81,21 +64,20 @@ nav{position:sticky;bottom:0;background:#fffffff2;border-top:1px solid #ddd;padd
 <input id="place" placeholder="Es. Manerba del Garda">
 <div class="total">Totale indicativo: <span id="total">€180</span></div>
 <p class="muted">Il preventivo finale può variare in base a menu, distanza e richieste speciali.</p>
-<button class="wa" onclick="sendRequest()">Invia richiesta su WhatsApp</button>
+<button onclick="sendRequest()">Invia richiesta su WhatsApp</button>
 </section>
 
 <section class="card">
 <h2>Contatti</h2>
-<div class="contact">375 741 0638</div>
-<button onclick="window.location.href='tel:+393757410638'">📞 Chiama lo Chef</button>
-<button class="wa" onclick="window.location.href='https://wa.me/393757410638'">💬 Scrivi su WhatsApp</button>
+<p><b>CA Chef a Domicilio</b><br>Chef privato · Lago di Garda</p>
+<p class="muted">Sostituisci il numero WhatsApp nel file con il tuo numero prima della pubblicazione.</p>
 </section>
 </main>
 <nav>
 <a href="#home">⌂<br>Home</a>
-<a href="#gallery">📸<br>Galleria</a>
 <a href="#menu">🍽️<br>Menu</a>
 <a href="#prenota">📅<br>Prenota</a>
+<a href="#home">👨‍🍳<br>Chef</a>
 </nav>
 <script>
 function calc(){
@@ -107,7 +89,8 @@ function sendRequest(){
  const n=document.getElementById('guests').value, e=document.getElementById('experience');
  const date=document.getElementById('date').value||'da definire', place=document.getElementById('place').value||'da definire';
  const msg=`Ciao Antonio, vorrei un preventivo CA Chef a Domicilio.%0A%0AOspiti: ${n}%0AEsperienza: ${encodeURIComponent(e.options[e.selectedIndex].text)}%0AData: ${date}%0ALocalità: ${encodeURIComponent(place)}`;
- window.location.href=`https://wa.me/393757410638?text=${msg}`;
+ const phone='390000000000';
+ window.location.href=`https://wa.me/${phone}?text=${msg}`;
 }
 calc();
 </script>
